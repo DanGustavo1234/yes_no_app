@@ -10,6 +10,7 @@ class MyMessageBubble extends StatelessWidget {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
+          const SizedBox(height: 10,),
             Container(
                 decoration: BoxDecoration(
                     color: colors.primary,
@@ -17,10 +18,10 @@ class MyMessageBubble extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                  child: Text("hola Mundo Ecuador",style: TextStyle(color: Colors.white)),
+                  child: Text("hola Mundo",style: TextStyle(color: Colors.white)),
                 ),
             ),
-            const SizedBox(height: 10)
+            const SizedBox(height: 5)
         ],
     );
   }
